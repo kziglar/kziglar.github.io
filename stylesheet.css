@@ -1,0 +1,556 @@
+/*
+*********************************************************************
+Title: Ziglar's Bicycles - CSS Page
+Use: Style Sheet for Ziglar's Bicycle Shop
+Author: Kaleigh Ziglar 
+School/Term: Southern Illionis University, Spring 2022
+Developed: February 3, 2022
+Tested: March 24, 2022: Passed on Chrome and Microsoft Edge browsers. 
+*********************************************************************
+*/
+
+/* Apply 10 pixel margin and add background color*/
+html
+{
+    margin: 10px;
+    background-color: lightcyan
+}
+#nav_menu ul {list-style-type: none}
+#nav_menu ul li {float: left}
+#nav_menu ul li a
+{   text-align: center;
+    display: block;
+    width: 150px;
+    padding: .25em;
+    padding-right: 10px;
+    text-decoration: none;
+    background-color:darkcyan;
+    color: white;
+    font-weight: bold;
+    border-right: 2px solid white;
+}
+
+#videoplayer
+{
+    padding-top: 20px;
+    display:flex;
+    width: 580px;
+    height: 270px;;
+    
+}
+
+/* Apply 10 pixel padding to all headings*/
+h1
+{   font-size: 48px;
+    padding: 10px;
+    text-align: center;
+    color:darkcyan
+}
+
+h2
+{   font-size: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+h3
+{   font-size: 30px;
+    padding: 10px;
+}
+
+
+/*Set 5 pixel padding to left and right of paragraph tags */
+
+p
+{   padding-left: 5px;
+    padding-right: 5px;
+    text-align: left;
+    font-size: 25px;
+}
+p.first
+{
+    font-size: 30px;
+}
+
+/*Apply 10 pixel left padding to list*/
+
+ul li
+{   padding-left: 10px;
+    font-size: 25px;
+    padding-right: 10px;
+
+}
+
+/*Image postitioning and blue border and rounded edges*/
+figure
+{
+    float: left;
+    margin-right:1em;
+}
+
+figcaption
+{
+    font-size: 20px;
+    display: block;
+    font-weight: bold;
+    padding-top: 1 em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid darkcyan;
+}
+
+#image1
+{  
+    border: 13px dotted darkcyan;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px; 
+    width:510px;
+    height:340px;
+    background-image: url("img/bike.jpg.jpg");
+    background-size:cover;
+}
+ #image1:hover
+    {
+        background-image: url("img/image1_rollover.jpg"); 
+        background-size: cover;
+        width:510px;
+        height:340px;
+    }
+/* Starts CSS for rentals.html */
+
+
+/* Create the second column layout */
+
+body
+{   
+    width: 100% ;
+}
+
+aside 
+{
+    padding-top: 180px;
+    width: 20%;
+    float: right;
+    color: darkcyan;
+    text-align: left;  
+}
+
+main
+{   width: 60%;
+    float: left;
+}
+
+street
+{   font-size: 25px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+street_type_1
+{   font-size: 25px;
+    color: darkcyan;
+    font-weight: bold;
+}
+
+street_type_2
+{   font-size: 25px;
+    color: darkcyan;
+    font-weight:bold;
+}
+
+mountain
+{   font-size: 25px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+mountain_type_1
+{
+    font-size: 25px;
+    color: darkcyan;
+    font-weight: bold;
+}
+
+mountain_type_2
+{   font-size: 25px;
+    color: darkcyan;
+    font-weight: bold;
+}
+
+prices
+{   font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+accessories
+{   color: black;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+contact_us
+{   color: black;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+terms
+{   font-size: 25px;
+    color: black;
+    font-weight:bold;
+}
+
+
+/* Scalable images*/
+#cruiser
+{   width: 100%;
+    height: auto;
+    max-width: 350px;
+    max-height:250px;
+    border: none;
+    margin-left:0;
+}
+
+#hybrid
+{   width: 100%;
+    height: auto;
+    max-width: 350px;
+    max-height:250px;
+    border: none;
+    margin-left:0;
+}
+
+#crosscountry
+{   width:100%;
+    height: auto;
+    max-width: 350px;
+    max-height:250px;
+    border: none;
+    margin-left:0;
+}
+
+#freeride
+{   width: 100%;
+    height: auto;
+    max-width: 350px;
+    max-height: 250px;
+    border: none;
+    margin-left:0;
+    
+}
+
+/* Video Player on Sales Page*/
+#videoplayer
+{
+    display: flex;
+    width:40%;
+    height: 20%;
+    margin: auto;
+}
+
+
+
+/* Formatting the tables on the SERVICES PAGE*/
+
+section
+{ 
+    border-collapse: collapse;
+}
+table
+{ 
+    border-collapse: collapse;
+    margin: 10px auto;
+    padding: 15px;
+}
+
+/*Aligns the descriptions in both tables to the left*/
+td.left
+{
+    text-align: left;
+}
+/*Aligns both tables service column to the left and bold*/
+td.leftbold
+{
+    text-align: left;
+    font-weight:bold;
+  
+}
+tr.columns
+{
+    font-size:40px;
+    background-color: darkcyan;
+    color: white;
+    padding: .2em;
+    
+    padding: 2em;
+}
+    
+
+/* CSS for both tables names*/
+th.tablename
+{
+    font-size:250%;
+    color: darkcyan;
+    font-family: bold;
+    border: 2px solid darkcyan;
+}
+/* Both tables column headers */
+th
+{
+    font-size:20px;
+    color: white;
+    font-family: bold;
+    text-align: center;
+    border: 2px solid white;
+    padding: .4em .9em;
+}
+
+td
+{
+    font-size: 18px;
+    text-align: right;
+    padding: .4em .9em;
+    border: 2px solid darkcyan;
+}
+
+
+
+
+
+
+/* Formatting a Form on the CONTACT PAGE*/
+
+form
+{
+    padding-top: 300px;
+    display: block;
+    font-size: 30px;
+    font-family: sans-serif;
+    padding-top: 10px;
+    line-height: 1.5;
+    vertical-align:bottom;
+}
+
+#state
+{
+    font-size: 20px;
+    cursor:pointer;
+    position: relative;
+    display: flex;
+}
+
+#emailaddress
+{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#submissiondate
+{
+  margin-top:10px;
+  margin-bottom:30px;
+}
+
+#phonenumber
+{
+    margin-bottom: 10px;
+}
+
+#textarea
+{
+    height: 10em;
+    width: 25em;
+}
+
+label, legend
+{
+    float: left;
+    font-weight: bold; 
+    padding-right:20px;
+    padding-left: 5px;
+    display: flex;
+}
+
+input
+{
+    float: left;
+    font-size: 25px;
+    padding:.2em;
+    display: flex;
+}
+
+p.response
+{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+button
+{
+    margin-left: .5em;
+    display: flex;
+    float: left;
+    font-size: 30px;
+}
+
+fieldset
+{
+    margin-top: 30px;   
+}
+
+
+
+
+
+
+
+
+    
+/*Responsive Page Layout*/
+
+/* mobile landscape to tablet - SMALL*/
+@media only screen and (max-width: 767px)
+{
+   
+    #image1
+    {
+        background-image: url("img/bike.jpg.jpg");
+        display: flex;
+        background-color: lightcyan;
+    }
+    
+    #image1:hover
+    {
+        background-image: url("img/image1_rollover.jpg");
+    }
+    
+    #nav_menu 
+    {   display:none;
+    
+    }
+       
+    .slicknav_menu 
+    {   display:flex;
+        background-color: darkcyan;
+        text-decoration-color: lightcyan;
+        font-family: bold;
+        font-size: 20px;
+    }
+    table
+    {
+        display: block;
+    
+    }
+
+    form
+    {
+    padding-top: 300px;
+    display: block;
+    font-size: 30px;
+    font-family: sans-serif;
+    padding-top: 10px;
+    line-height: 1.5;
+    vertical-align:bottom;
+    }
+    
+    button
+    {
+    
+        display: flex;
+        margin-top: 20px;
+    }
+    
+    label
+    {
+        display: flex;
+    }
+   
+    legend
+    {
+        display: flex;
+    } 
+    
+    input
+    {
+        display: flex;
+    }
+    
+    #videoplayer
+    {
+        display:flex;
+    }
+    
+    h1 {font-size:3em;}
+    
+    h2, h3, prices {font-size: 1.875em }
+    
+    p, ul li {font-size: 1.25em}
+    
+    street, street_type_1, street_type_2, mountain, mountain_type_1, mountain_type_2, accessories, contact_us, terms {font-size: 1.56em}
+}
+
+
+/* LARGE*/
+@media only screen and (min-width: 768px)
+{
+    #image1
+    {
+        background-image: url("img/bike.jpg.jpg");
+        display: flex;
+        background-color: lightcyan;
+    }
+    
+    #image1:hover
+    {
+        background-image: url("img/image1_rollover.jpg");
+    }
+    
+    #nav_menu
+    {
+        display:block;
+    }
+    
+    #mobile_menu
+    {
+        display: none;
+    }
+    
+    .slicknav_menu
+    {
+        display: none;
+    }
+    
+    table
+    {
+        display: block;
+      
+    }
+    
+    button,label,legend,input
+    {
+        display: flex;
+    }
+    
+    form
+    {
+    padding-top: 300px;
+    display: block;
+    font-size: 30px;
+    font-family: sans-serif;
+    padding-top: 10px;
+    line-height: 1.5;
+    vertical-align:bottom;
+    }
+    
+    #videoplayer
+    {
+        display: flex;
+    }
+    
+
+
+
+
+

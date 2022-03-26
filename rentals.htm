@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!-- 
+*********************************************************************
+Title: Ziglar's Bicycles
+Use: To offer users different bikes that they can rent by day or by week. 
+Author: Kaleigh Ziglar 
+School/Term: Southern Illionis University, Spring 2022
+Developed: February 3, 2022
+Tested: March 24, 2022, Passed on Chrome and Microsoft Edge browsers. 
+*********************************************************************
+-->
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+        <title>Ziglar's Bicycle Rentals</title>
+    <!---adding link for favicon--->
+        <link rel="icon" href = "img/favicon.ico">
+        <meta name = "descirption" content= "A bicycle rental shop that allows users to look at the bicycle that are available to rent.">
+    <!---adding in the viewport for responsive webpage design--->
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <!---linking the slicknav menu--->
+        <link rel= "stylesheet" href = "SlickNav-master/dist/slicknav.css">
+        <link rel = "stylesheet" href = "SlickNav-master/dist/slicknav.min.css">
+        <script src = "https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src = "SlickNav-master/dist/jquery.slicknav.js"></script>
+        <script src = "SlickNav-master/dist/jquery.slicknav.min.js"></script>
+        <script type= "text/javascript">
+                $(document).ready(function()
+        {$('#nav_menu').slicknav({prependTo: "#mobile_menu"});
+                });
+                </script>
+    <!---linking the stylesheet--->
+        <link rel = "stylesheet" href = "stylesheet.css">
+    
+</head>
+<body>
+    
+    <!---adding main image with caption and rollover image--->
+        <figure>
+            <div id = "image1"></div>
+            <figcaption>Street Cruiser from Ziglar's Bicycles</figcaption>
+            <p img id = "image1_rollover"></p>
+        </figure>
+    
+    <!---adding navigation menu--->
+        <nav id ="mobile_menu"></nav>
+        <nav id = "nav_menu">
+            <ul>
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="rentals.htm">Rentals</a></li>
+                <li><a href="sales.htm">Sales</a></li>
+                <li><a href="services.htm">Services</a></li>
+                <li><a href="contact.htm">Contact Us</a></li>
+            </ul>
+        </nav>
+
+    <main>
+    
+        <h1> Welcome to Ziglar's Bicycle Rental Shop! </h1>
+        
+        <h2>Are you looking for the perfect bicycle?</h2>
+    
+        <p class="first">Look no futher! At Ziglar's Bicycle shop, we are here to help you find the perfect bike for you! We offer different bicycles that you are capable of renting!
+        </p>
+        
+        <h3> Here is what we have to offer: </h3>
+        
+        
+        <street>Street Bicycles<br><br></street>
+        
+        
+        <street_type_1>Street Cruiser Bicycle <br><br></street_type_1>
+        <img id = cruiser src="img/cruiser.jpg">
+            <p>
+            Desciption: This bicycle is a low impact and low - speed bicycle that is optimal for rides on dirt paths and on paved lanes. 
+            </p>
+            <p>
+            Perfect for: toursist and joy-riders<br><br>
+            </p>
+        
+        <street_type_2>Hybrid Bicycle<br><br></street_type_2>
+            <img id = hybrid src="img/hybrid.jpg">
+            <p>
+            Description: This bicycle is a hybrid between a street bike and a mountain bike. has a lightweight frame that rides well on roadways but is also capable of riding on a rougher terrain. 
+            </p>
+            <p>
+            Perfect for: commuters and daily riders
+            </p>
+        
+        <mountain>Mountain Bicycles</mountain>
+        <br>
+        <br>
+        
+        <mountain_type_1>Cross Country Bicycle <br><br></mountain_type_1>
+            <img id = crosscountry src="img/crosscountry.jpg">
+            <p> 
+            Description: This bicycle is extremely lightweight. It is designed for traveling longer distances and at faster speeds.
+            </p>
+            <p>
+            Perfect for: cross country racers and trail riders
+            </p>
+            <br>
+            <br>
+        <mountain_type_2>Freeride Mountian Bicycle<br><br></mountain_type_2>
+        <img id = freeride src="img/freeride.jpg">
+            <p>
+            Description: This bicycle is ideal for downhill riding, dirt jumping, and freestyle BMX. This bicycle has a full-suspension. 
+            </p>
+            <p>
+            Perfect for: free-riders and aggressive trail riders
+            </p>
+        
+        
+        
+        <prices><br><br>Our Prices:</prices>
+            <p>
+                We have a few options when it comes to renting our bicycles!
+                You are able to rent our bikes for one single day or you are able to rent them for an entire week. All of our bikes have an equal cost and you can see the prices below:
+            </p>
+            <ul>
+                <li> Daily Rate: $45</li>
+                <li>Weekly Rate: $175</li>
+            </ul>
+            <p>
+                In addition, you can also rent out some bicyle accessories that can be found on the right side of the page under the section titled "Other Accessories".
+            </p>
+        
+    </main>
+    
+    <aside>
+        <accessories> Other Accessories: </accessories>
+            <p>
+            Make your bicycle rental experience even better with these accessories! The accessory prices will be added to total cost of bicycle rental (one time fee).
+            </p> 
+            <ul>
+                <li>Helmet (+ $5)</li>
+                <li>Basket (+ $5)</li>
+                <li>Bicycle Gloves (+ $3)</li>
+                <li>Cycling Shoes (+ $5)</li>
+                <li>Cycling Glasses (+ $3)</li>
+                <li>Bicycle Lock (+ $5)</li>
+                <li>Smartphone Holder (+ $3)</li>
+            </ul>
+        
+        <contact_us> Contact Us!</contact_us>
+            <p>
+            Telephone: 123-456-7890
+            </p>
+            <p>
+            Email: ziglarsbikerental@gmail.com
+            </p>
+            <p>
+            Address: 123 Beach Ave Sarasota, FL 12356
+            </p>
+            <p>
+            To learn more about the owners, visit the
+            <a href="https://salukinet.siu.edu">official SalukiNet website</a>
+            </p>
+        <terms>Bicycle Rental Terms</terms>
+        <p>
+            All riders must read, fill out, and sign a Waiver Agreement form upon arrival. 
+            All riders for these bicycle must be 12 years of age or older. Riders under the age of 18 must be accompanied by a parent or gaurdian. 
+            We accept cash or credit card payment.
+            Rervations must be made in person, over the phone, or by email with a conformation.
+        </p>
+        
+    </aside>
+    
+</body>
+</html>

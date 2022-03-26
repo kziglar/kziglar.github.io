@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- 
+*********************************************************************
+Title: Ziglar's Bicycles Sales
+Use: To provide information on bicycles for sale in my shop. 
+Author: Kaleigh Ziglar 
+School/Term: Southern Illionis University, Spring 2022
+Developed: February 11, 2022
+Tested: March 24, 2022, Passed on Chrome and Microsoft Edge browsers. 
+*********************************************************************
+-->
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+        <title>Sales</title>
+    <!---adding link for favicon--->
+        <link rel="icon" href = "img/favicon.ico">
+        <meta name = "description" content = "A page for the sales of a bicycle shop">
+        <meta name = "keywords" content = "bicycles, shop, sales, Ziglar's Bicycles">
+     <!---adding in the viewport for responsive webpage design--->
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+     <!---linking the slicknav menu--->
+        <link rel= "stylesheet" href = "SlickNav-master/dist/slicknav.css">
+        <link rel = "stylesheet" href = "SlickNav-master/dist/slicknav.min.css">
+        <script src = "https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src = "SlickNav-master/dist/jquery.slicknav.js"></script>
+        <script src = "SlickNav-master/dist/jquery.slicknav.min.js"></script>
+        <script type= "text/javascript">
+                $(document).ready(function()
+        {$('#nav_menu').slicknav({prependTo: "#mobile_menu"});
+                });
+                </script>
+    
+    <!---linking the stylesheet--->
+        <link rel = "stylesheet" href = "stylesheet.css">
+    </head>
+<body>
+    
+     <!---adding main image with caption and rollover image--->
+        <figure>
+            <div id = "image1"></div>
+            <figcaption>Street Cruiser from Ziglar's Bicycles</figcaption>
+            <p img id = "image1_rollover"></p>   
+        </figure>
+    
+     <!---adding navigation menu--->
+        <nav id ="mobile_menu"></nav>
+        <nav id = "nav_menu">
+            <ul>
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="rentals.htm">Rentals</a></li>
+                <li><a href="sales.htm">Sales</a></li>
+                <li><a href="services.htm">Services</a></li>
+                <li><a href="contact.htm">Contact Us</a></li>
+            </ul>
+        </nav>
+    
+     <!---adding a short video to the sales page--->
+        <video id = "videoplayer" controls autoplay loop>
+              <source src = "video/sales_slideshow.mp4">
+        </video>
+</body>
+</html>

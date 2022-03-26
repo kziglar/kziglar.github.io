@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!-- 
+*********************************************************************
+Title: Ziglar's Bicycles Contact
+Use: A contact page for Ziglar's Bicycle Shop
+Author: Kaleigh Ziglar 
+School/Term: Southern Illionis University, Spring 2022
+Developed: February 11, 2022
+Tested: March 24, 2022, Passed on Chrome and Microsoft Edge browsers. 
+*********************************************************************
+-->
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+        <title>Contact Us</title>
+        <link rel="icon" href = "img/favicon.ico">
+        <meta name = "description" content = "A contact page for a bicycle shop">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <link rel= "stylesheet" href = "SlickNav-master/dist/slicknav.css">
+        <link rel = "stylesheet" href = "SlickNav-master/dist/slicknav.min.css">
+        <script src = "https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src = "SlickNav-master/dist/jquery.slicknav.js"></script>
+        <script src = "SlickNav-master/dist/jquery.slicknav.min.js"></script>
+        <script type= "text/javascript">
+                $(document).ready(function()
+        {$('#nav_menu').slicknav({prependTo: "#mobile_menu"});
+                });
+                </script>
+    
+    <!---linking the stylesheet--->
+        <link rel = "stylesheet" href = "stylesheet.css">
+        
+</head>
+<body>
+   
+    <!---adding main image with caption and rollover image--->
+        <figure>
+            <div id = "image1"></div>
+            <figcaption>Street Cruiser from Ziglar's Bicycles</figcaption>
+             <p img id = "image1_rollover"></p>
+        </figure>
+    
+     <!---adding navigation menu--->
+        <nav id ="mobile_menu"></nav>
+        <nav id = "nav_menu">
+            <ul>
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="rentals.htm">Rentals</a></li>
+                <li><a href="sales.htm">Sales</a></li>
+                <li><a href="services.htm">Services</a></li>
+                <li><a href="contact.htm">Contact Us</a></li>
+            </ul>
+        </nav>
+    
+  
+    <!--- Form on contact page --->
+        <form class = "form">
+            <br><br><br><br><br><br><br><br><br><br>
+            <label for ="fullname">Full Name:</label><br>
+            <input required autofocus type= "text" id = "fullname" minlength = "15" maxlength = "25" placeholder="Enter Your Full Name">
+            <br><br>
+            <label for = "address"> Address:</label><br>
+            <input required type= "text" id = "address" minlength = "15" maxlength="50" placeholder="Enter Your Address">
+            <br><br>
+            <label for = "city"> City:</label><br>
+            <input required type= "text" id = city minlength = "4" maxlength ="25" placeholder = "Enter Your City"><br><br>
+            <label for = "state"> State:</label><br>
+            <select required id = "state" size="6" >
+                    <option value = "AL"> AL </option>
+                    <option value = "AK"> AK </option>
+                    <option value = "AZ"> AZ </option>
+                    <option value = "AR"> AR </option>
+                    <option value = "CA"> CA </option>
+                    <option value = "CO"> CO </option>
+                    <option value = "CT"> CT </option>
+                    <option value = "DE"> DE </option>
+                    <option value = "FL"> FL </option>
+                    <option value = "GA"> GA </option>
+                    <option value = "HI"> HI </option>
+                    <option value = "ID"> ID </option>
+                    <option value = "IL"> IL </option>
+                    <option value = "IN"> IN </option>
+                    <option value = "IA"> IA </option>
+                    <option value = "KS"> KS </option>
+                    <option value = "KY"> KY </option>
+                    <option value = "LA"> LA </option>
+                    <option value = "ME"> ME </option>
+                    <option value = "MD"> MD </option>
+                    <option value = "MA"> MA </option>
+                    <option value = "MI"> MI </option>
+                    <option value = "MN"> MN </option>
+                    <option value = "MS"> MS </option>
+                    <option value = "MO"> MO </option>
+                    <option value = "MT"> MT </option>
+                    <option value = "NE"> NE </option>
+                    <option value = "NV"> NV </option>
+                    <option value = "NH"> NH </option>
+                    <option value = "NJ"> NJ </option>
+                    <option value = "NM"> NM </option>
+                    <option value = "NY"> NY </option>
+                    <option value = "NC"> NC </option>
+                    <option value = "ND"> ND </option>
+                    <option value = "OH"> OH </option>
+                    <option value = "OK"> OK </option>
+                    <option value = "OR"> OR </option>
+                    <option value = "PA"> PA </option>
+                    <option value = "RI"> RI </option>
+                    <option value = "SC"> SC </option>
+                    <option value = "SD"> SD </option>
+                    <option value = "TN"> TN </option>
+                    <option value = "TX"> TX </option>
+                    <option value = "UT"> UT </option>
+                    <option value = "VT"> VT </option>
+                    <option value = "VA"> VA </option>
+                    <option value = "WV"> WV </option>
+                    <option value = "WI"> WI </option>
+                    <option value = "WY"> WY </option>
+            </select><br>
+            
+            <label for ="zipcode">Zip Code:</label><br>
+            <input required type= "text" id = "zipcode" minlength = "5" maxlength = "10" placeholder="99999 or 99999-9999">
+            <br><br>
+            <label for = "phonenumber">Phone Number:</label>
+            <input required type= "tel" id = "phonenumber" minlength = "10" maxlength="25" pattern = "[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="999-999-9999">
+            
+            <label for = "emailaddress">Email Address:</label>
+            <input required type= "email" id = "emailaddress" minlength = "10" maxlength="25" placeholder="Enter Your Email Address">
+            <br><br>
+            <label for = "submissiondate">Submission Date:</label><br>
+            <input required type= "date" id = "submissiondate">
+            <br><br>
+            <fieldset>
+                <legend>Inquiry Type:</legend><br><br>
+                <input type = "checkbox" name = "check1" value = "Sales"> Sales<br>
+                <input type = "checkbox" name = "check2" value = "Services"> Services<br>
+                <input type = "checkbox" name = "check3" value = "Rentals"> Rentals<br>
+            </fieldset>
+            <br><br>
+            <fieldset>
+                <legend>Bicycle Type:</legend><br><br>
+                <input type= "radio" name = "bike1" value = "Street Cruiser Bicycles"> Street Cruiser Bicycles<br>
+                <input type= "radio" name = "bike2" value = "Hybrid Bicycles"> Hybrid Bicycles <br>
+                <input type= "radio" name = "bike3" value = "Mountain Bicycles"> Mountain Bicycles <br>
+                <input type= "radio" name = "bike4" value = "Cross Country Bicycles"> Cross Country Bicycles<br>
+            </fieldset>
+            <br><br>
+            <label for = "password"> Password:</label><br>
+            <input required type = "password" id = "password" placeholder="Create A Password">
+            <br><br>
+            <label for = "message"> Message:</label><br>
+            <input required type = "textarea" id = "textarea" minlength = "20" maxlength="200"  placeholder=" Please enter comments here."><br>
+            <br><br><br>                                                                                                     
+        </form>
+        <!--- Buttons Send and Reset --->
+            <button class = "button"onclick= "document.location.href= 'response.htm';"> Send</button>
+            <button class = "button"onclick = "document.location.href = 'contact.htm';"> Reset</button>
+
+</body>
+</html>

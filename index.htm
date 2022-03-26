@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<!-- 
+*********************************************************************
+Title: Ziglar's Bicycles
+Use: To allow users to browse the bicycle shop
+Author: Kaleigh Ziglar 
+School/Term: Southern Illionis University, Spring 2022
+Developed: January 19, 2022
+Tested: March 24, 2022, Passed on Chrome and Microsoft Edge browsers. 
+********************************************************************* 
+-->
+
+<html lang="en-US">
+<head>
+        <title>Ziglar's Bicycles</title>
+    <!---adding link for favicon--->
+        <link rel="icon" href = "img/favicon.ico">
+        <meta charset = "utf-8">
+        <meta name="decription" content="A bicycle shop that allows users to browse through bicycle options.">
+        <meta name="keywords" content = "bicycles, shop, Ziglar's Bicycles">
+   <!---adding in the viewport for responsive webpage design--->
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <!---linking the slicknav menu--->
+        <link rel= "stylesheet" href = "SlickNav-master/dist/slicknav.css">
+        <link rel = "stylesheet" href = "SlickNav-master/dist/slicknav.min.css">
+        <script src = "https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src = "SlickNav-master/dist/jquery.slicknav.js"></script>
+        <script src = "SlickNav-master/dist/jquery.slicknav.min.js"></script>
+        <script type= "text/javascript">
+                $(document).ready(function()
+        {$('#nav_menu').slicknav({prependTo: "#mobile_menu"});
+                });
+                </script>
+    
+    <!---linking the stylesheet--->
+        <link rel = "stylesheet" href = "stylesheet.css">
+        
+    
+</head>
+<body>
+    <!---adding audio--->
+        <audio id="audioplayer" src="audio/island.mp3" autoplay controls>
+        </audio>
+    
+    <!---adding main image with caption and rollover image--->   
+        <figure>
+            <div id = "image1"></div>
+            <figcaption>Street Cruiser from Ziglar's Bicycles</figcaption>
+            <p img id = "image1_rollover"></p>           
+        </figure>
+    
+    <!---adding navigation menu--->
+        <nav id ="mobile_menu"></nav>
+        <nav id = "nav_menu">
+            <ul>
+                <li><a href="index.htm"> Home </a></li>
+                <li><a href="rentals.htm"> Rentals </a></li>
+                <li><a href="sales.htm"> Sales </a></li>
+                <li><a href="services.htm"> Services </a></li>
+                <li><a href="contact.htm"> Contact Us </a></li>
+            </ul>
+        </nav><br><br><br><br>
+
+    
+    <main>
+        <br><br><br><br><br>
+        <h1> Welcome to Ziglar's Bicycle Shop!</h1>   
+        
+        <h2>Are you looking for the perfect bicycle?</h2>
+        
+        <p class="first">Look no futher! At Ziglar's Bicycle shop, we are here to help you find the perfect bike for you!</p>
+        
+        
+        <h3>We have a vairety of bikes, including: </h3>
+        
+        <ul>
+            <li>Street Cruiser Bicycles</li>
+            <li>Hybrid Bicycles</li> 
+            <li>Mountain Bicycles</li>
+            <li>Cross Country Bicycles</li>
+        </ul>
+        
+        <p><em>Contact us at: 123-456-7890 with any questions you have.</em></p>
+        
+        <p>Or visit us at 123 Beach Ave Sarasota, FL 12356</p>
+        
+        <p>To learn more about the owners, visit the
+            <a href="https://salukinet.siu.edu">official SalukiNet website</a>.</p>
+    </main>
+    
+    
+
+</body>
+</html>

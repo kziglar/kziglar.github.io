@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!-- 
+*********************************************************************
+Title: Ziglar's Bicycles Services
+Use: To provide information on bicycle services offered at the shop.
+Author: Kaleigh Ziglar 
+School/Term: Southern Illionis University, Spring 2022
+Developed: February 11, 2022
+Tested: March 24, 2022, Passed on Chrome and Microsoft Edge browsers. 
+*********************************************************************
+-->
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+        <title>Services</title>
+    <!---adding link for favicon--->
+        <link rel="icon" href = "img/favicon.ico">
+        <meta name = "description" content = "A page for the services of a bicycle shop">
+        <meta name = "keywords" content = "bicycles, shop, services, Ziglar's Bicycles">
+    <!---adding in the viewport for responsive webpage design--->
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <!---linking the slicknav menu--->
+        <link rel= "stylesheet" href = "SlickNav-master/dist/slicknav.css">
+        <link rel = "stylesheet" href = "SlickNav-master/dist/slicknav.min.css">
+        <script src = "https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src = "SlickNav-master/dist/jquery.slicknav.js"></script>
+        <script src = "SlickNav-master/dist/jquery.slicknav.min.js"></script>
+        <script type= "text/javascript">
+                $(document).ready(function()
+        {$('#nav_menu').slicknav({prependTo: "#mobile_menu"});
+                });
+                </script>
+    
+    <!---linking the stylesheet--->
+        <link rel = "stylesheet" href = "stylesheet.css">
+        
+</head>
+<body>
+    
+    <!---adding main image with caption and rollover image--->   
+        <figure>
+            <div id = "image1"></div>
+            <figcaption>Street Cruiser from Ziglar's Bicycles</figcaption>
+            <p img id = "image1_rollover"></p>
+        </figure>
+    
+     <!---adding navigation menu--->
+        <nav id ="mobile_menu"></nav>
+        <nav id = "nav_menu">
+            <ul>
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="rentals.htm">Rentals</a></li>
+                <li><a href="sales.htm">Sales</a></li>
+                <li><a href="services.htm">Services</a></li>
+                <li><a href="contact.htm">Contact Us</a></li>
+            </ul>
+        </nav>
+    <!-----Beginning of Tables----->
+    <section>
+        <!-----Basic Tune-Up Table----->
+            <table class = "basic">
+            <thead>
+                <tr>
+                    <th class = "tablename" colspan ="4" >Basic Tune-Up</th>
+                </tr>
+                <tr class = "columns" >
+                    <th>Services</th>
+                    <th>Description</th>
+                    <th>Cost</th>
+                    <th>Turnaround Time</th>
+                </tr>
+            </thead>
+        
+            <tbody>
+            <tr>
+                <td class = "leftbold">Saftey Checks</td>
+                <td class = "left">This is a standard service that ensures your bike is ready to go when you are!</td>
+                <td>$45</td>
+                <td>~30 minutes</td>
+            </tr>
+                
+            <tr>
+                <td class = "leftbold">Brake Adjustments</td>
+                <td class = "left">This service makes sure that your brakes are safe and reliable.</td>
+                <td>$45</td>
+                <td>~15 minutes</td>
+            </tr> 
+            
+            <tr>
+                <td class = "leftbold">Clean Up and Lube</td>
+                <td class = "left">This service will get your bicycle squeaky clean and sounding less squeaky!</td>
+                <td>$30</td>
+                <td>~30 minutes</td>
+            </tr>
+                 
+            <tr>
+                <td class = "leftbold">Seat and Handlebar Adjustments</td>
+                <td class = "left">This service will make any necessary adjustments to your handlbars and seats.</td>
+                <td>$25</td>
+                <td>~20 minutes</td>
+            </tr>
+                
+            <tr>
+                <td class = "leftbold">Calibrate Gears</td>
+                <td class = "left">This serivce will make any needed calibrations to your bicycles gears to make sure they are ready to go!</td>
+                <td>$35</td>
+                <td>~30 minutes</td>
+            </tr>
+                
+            <tr>
+                <td class = "leftbold">Adjust Wheel Hubs</td>
+                <td class = "left">This service will adjust your wheel hubs for you.</td>
+                <td>$30</td>
+                <td>~25 minutes</td>
+            </tr>
+                
+            </tbody>
+            </table>
+                
+                <!-----Advanced Tune-Up Table----->
+    
+        
+            <table class = "advanced">
+            <thead>
+                <tr>
+                    <th class = "tablename" colspan ="4" >Advanced Tune-Up</th>
+                </tr>
+                
+                <tr class = "columns">
+                    <th>Services</th>
+                    <th>Description</th>
+                    <th>Cost</th>
+                    <th>Turnaround Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            <tr>
+                <td class = "leftbold">Tire Repair</td>
+                <td class = "left">This service will find any issue that may interefere with your ride and get them fixed.</td>
+                <td>$35</td>
+                <td>~30 mintues</td>
+            </tr>
+                
+            <tr>
+                <td class = "leftbold">Cable Replacement</td>
+                <td class = "left">This service will find if you need any replacements to your bicycle cables.</td>
+                <td>$30</td>
+                <td>~20 minutes</td>
+            </tr>
+                
+            <tr>
+                <td class = "leftbold">Parts Replacement</td>
+                <td class = "left">This service will check if any parts on your bicycle need to be replaced.</td>
+                <td>$40</td>
+                <td>~30 mintues</td>
+            </tr>
+                
+            <tr>
+                <td class = "leftbold">Repair Bike Chain</td>
+                <td class = "left">This service will repair your bicycles chain for you.</td>
+                <td>$30</td>
+                <td>~30 mintues</td>
+            </tr>
+                
+            <tr>
+                <td class = "leftbold">Other Miscellaneous Repairs</td>
+                <td class = "left">This can be any other serivce not already listed.</td>
+                <td>$---</td>
+                <td>---</td>
+            </tr>
+            </tbody>
+        </table>
+
+    </section>
+</body>
+</html>
